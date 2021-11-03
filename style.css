@@ -14,25 +14,26 @@
 
 .border-container1 {
 	display: grid;
-	gap: 2rem;
+	gap: 1rem;
 	grid-template-columns: 1fr auto;
 }
 .border-container2 {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	align-items: center;
-	gap: 2rem;
+	gap: 1rem;
+}
+.search-form {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 0.25rem;
 }
 
 .search-bar {
-	width: 100%;
 	display: grid;
-	gap: 0.25rem;
-	grid-template-columns: 1fr auto auto;
+	grid-template-columns: 1fr auto;
 	align-items: center;
-}
-.search-input {
-	width: 100%;
 }
 
 .menu-button,
