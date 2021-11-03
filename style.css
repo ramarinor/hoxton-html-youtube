@@ -6,7 +6,7 @@
 
 .header {
 	display: grid;
-	grid-auto-flow: column;
+	grid-template-columns: auto 1fr auto;
 	justify-content: space-between;
 	padding: 1rem;
 }
@@ -19,7 +19,19 @@
 	list-style-type: none;
 }
 
-.youtube-logo {
-	display: inline-block;
-	height: 20px;
+.header li {
+	border-radius: 50%;
+	padding: 0 0.25rem;
+	background-color: rgba(0, 0, 0, 0);
+	transition: background-color 0.5s;
+}
+.header li:active {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.header .logo:active {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.search-bar {
+	margin-left: 2.5rem;
 }
