@@ -9,8 +9,19 @@
 	padding: 0.5rem 1rem;
 	gap: 1rem;
 	align-items: center;
-	grid-template-columns: auto auto 1fr auto;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	grid-template-columns: auto 1fr;
+}
+
+.border-container1 {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: 1fr auto;
+}
+.border-container2 {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 2rem;
 }
 
 .search-bar {
@@ -58,4 +69,18 @@
 
 .menu-button-image img:active {
 	border: 2px solid blue;
+}
+
+.border-container1 {
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1312px) {
+	.border-container1 {
+		border-bottom: none;
+	}
+	.border-container2 {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
 }
