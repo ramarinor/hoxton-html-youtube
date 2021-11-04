@@ -4,18 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Youtube</title>
+		<title>Apple</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header class="header">
+		<section class="header-left">
 			<button class="menu-button">
 				<svg
 					viewBox="0 0 24 24"
 					preserveAspectRatio="xMidYMid meet"
 					focusable="false"
 					class="style-scope yt-icon"
-					style="pointer-events: none; display: block; width: 24; height: 24"
+					style="
+						pointer-events: none;
+						display: block;
+						width: 24px;
+						height: 24px;
+					"
 				>
 					<g class="style-scope yt-icon">
 						<path
@@ -25,7 +30,6 @@
 					</g>
 				</svg>
 			</button>
-			<div class="border-container2">
 			<a href="#" class="yt-logo">
 				<svg
 					viewBox="0 0 90 20"
@@ -91,19 +95,28 @@
 					</g>
 				</svg>
 			</a>
-			<div class="border-container1">
-
-			
+		</section>
+		<section class="header-search">
 			<form class="search-form">
 				<div class="search-bar">
-					<input class="search-input" type="search" placeholder="Search" size="1"/>
+					<input
+						class="search-input"
+						type="search"
+						placeholder="Search"
+						size="1"
+					/>
 					<button class="search-button">
 						<svg
 							viewBox="0 0 24 24"
 							preserveAspectRatio="xMidYMid meet"
 							focusable="false"
 							class="style-scope yt-icon"
-							style="pointer-events: none; display: block; width: 24; height: 24"
+							style="
+								pointer-events: none;
+								display: block;
+								width: 24;
+								height: 24;
+							"
 						>
 							<g class="style-scope yt-icon">
 								<path
@@ -131,67 +144,225 @@
 					</svg>
 				</button>
 			</form>
-			<section class="menu-buttons">
-				<button class="menu-button">
-					<svg
-						viewBox="0 0 24 24"
-						preserveAspectRatio="xMidYMid meet"
-						focusable="false"
-						class="style-scope yt-icon"
-						style="pointer-events: none; display: block; width: 24; height: 24"
-					>
-						<g class="style-scope yt-icon">
-							<path
-								d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"
-								class="style-scope yt-icon"
-							></path>
-						</g>
-					</svg>
-				</button>
-				<button class="menu-button">
-					<svg
-						viewBox="0 0 24 24"
-						preserveAspectRatio="xMidYMid meet"
-						focusable="false"
-						class="style-scope yt-icon"
-						style="pointer-events: none; display: block; width: 24; height: 24"
-					>
-						<g class="style-scope yt-icon">
-							<path
-								d="M16,4v4h4V4H16z M19,7h-2V5h2V7z M16,10v4h4v-4H16z M19,13h-2v-2h2V13z M10,4v4h4V4H10z M13,7h-2V5h2V7z M10,10v4h4v-4H10z M13,13h-2v-2h2V13z M16,16v4h4v-4H16z M19,19h-2v-2h2V19z M10,16v4h4v-4H10z M13,19h-2v-2h2V19z M4,4v4h4V4H4z M7,7H5V5h2V7z M4,10 v4h4v-4H4z M7,13H5v-2h2V13z M4,16v4h4v-4H4z M7,19H5v-2h2V19z"
-								class="style-scope yt-icon"
-							></path>
-						</g>
-					</svg>
-				</button>
-				<button class="menu-button">
-					<svg
-						viewBox="0 0 24 24"
-						preserveAspectRatio="xMidYMid meet"
-						focusable="false"
-						class="style-scope yt-icon"
-						style="pointer-events: none; display: block; width: 24; height: 24"
-					>
-						<g class="style-scope yt-icon">
-							<path
-								d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
-								class="style-scope yt-icon"
-							></path>
-						</g>
-					</svg>
-				</button>
-				<button class="menu-button-image">
-					<img
-						class="style-scope yt-img-shadow"
-						alt="Avatar image"
-						height="32"
-						width="32"
-						src="https://yt3.ggpht.com/yti/APfAmoG7p2a0okis6fVeW1ZGogKmzLs_7extae_V2Z71Kg=s88-c-k-c0x00ffffff-no-rj-mo"
-					/>
-				</button>
-			</div>
-			</div>
-			</section>
-		</header>
+		</section>
+		<section class="header-right">
+			<button class="menu-button">
+				<svg
+					viewBox="0 0 24 24"
+					preserveAspectRatio="xMidYMid meet"
+					focusable="false"
+					class="style-scope yt-icon"
+					style="pointer-events: none; display: block; width: 24; height: 24"
+				>
+					<g class="style-scope yt-icon">
+						<path
+							d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"
+							class="style-scope yt-icon"
+						></path>
+					</g>
+				</svg>
+			</button>
+			<button class="menu-button">
+				<svg
+					viewBox="0 0 24 24"
+					preserveAspectRatio="xMidYMid meet"
+					focusable="false"
+					class="style-scope yt-icon"
+					style="pointer-events: none; display: block; width: 24; height: 24"
+				>
+					<g class="style-scope yt-icon">
+						<path
+							d="M16,4v4h4V4H16z M19,7h-2V5h2V7z M16,10v4h4v-4H16z M19,13h-2v-2h2V13z M10,4v4h4V4H10z M13,7h-2V5h2V7z M10,10v4h4v-4H10z M13,13h-2v-2h2V13z M16,16v4h4v-4H16z M19,19h-2v-2h2V19z M10,16v4h4v-4H10z M13,19h-2v-2h2V19z M4,4v4h4V4H4z M7,7H5V5h2V7z M4,10 v4h4v-4H4z M7,13H5v-2h2V13z M4,16v4h4v-4H4z M7,19H5v-2h2V19z"
+							class="style-scope yt-icon"
+						></path>
+					</g>
+				</svg>
+			</button>
+			<button class="menu-button">
+				<svg
+					viewBox="0 0 24 24"
+					preserveAspectRatio="xMidYMid meet"
+					focusable="false"
+					class="style-scope yt-icon"
+					style="pointer-events: none; display: block; width: 24; height: 24"
+				>
+					<g class="style-scope yt-icon">
+						<path
+							d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
+							class="style-scope yt-icon"
+						></path>
+					</g>
+				</svg>
+			</button>
+			<button class="menu-button-image">
+				<img
+					class="style-scope yt-img-shadow"
+					alt="Avatar image"
+					height="32"
+					width="32"
+					src="https://yt3.ggpht.com/yti/APfAmoG7p2a0okis6fVeW1ZGogKmzLs_7extae_V2Z71Kg=s88-c-k-c0x00ffffff-no-rj-mo"
+				/>
+			</button>
+		</section>
+		<aside class="side-menu">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui aut odit ab
+			esse nesciunt cupiditate quibusdam fugit possimus impedit reiciendis omnis
+			natus quam accusantium, quod non perferendis? Est officiis quis nobis
+			commodi nemo error sunt sed dignissimos suscipit totam cupiditate, rerum
+			assumenda incidunt saepe odio qui repellat delectus, quisquam dolorem
+			doloremque facilis. Aperiam magnam dolor qui dolores, est dignissimos
+			laboriosam, quis doloribus, iste atque corrupti tempora tempore. Eos
+			molestias possimus necessitatibus illum alias veritatis, similique quidem
+			excepturi odio! Quo provident asperiores qui voluptates atque amet porro
+			eos ex minima neque corporis rem, ipsam officia debitis ab similique!
+			Excepturi voluptates unde necessitatibus sint amet! Blanditiis repellendus
+			fugiat illum officia iure quis quod soluta exercitationem minima,
+			inventore officiis nihil saepe voluptatibus ad adipisci? Corrupti animi
+			quisquam dolorem ea vero nostrum totam tenetur atque aspernatur!
+			Cupiditate molestiae eaque ducimus rem! Similique pariatur quasi maxime
+			possimus culpa eos id excepturi, sapiente natus exercitationem consequatur
+			temporibus quam perferendis alias labore corporis adipisci. Dicta earum
+			delectus illo veniam sapiente magnam, molestiae praesentium? Magni
+			distinctio maxime labore, obcaecati delectus, iste illum iure, dolor porro
+			corrupti laborum amet. Ex, earum ut veniam recusandae totam molestiae fuga
+			minus consequuntur rerum perspiciatis id delectus ea esse numquam.
+			Dignissimos laboriosam ex, mollitia necessitatibus voluptas error.
+			Reprehenderit, harum exercitationem impedit quos hic reiciendis modi
+			eligendi temporibus cumque architecto nostrum nulla consequuntur soluta,
+			dolorum in, repellat rerum nesciunt ipsam pariatur repellendus ex veniam
+			incidunt enim placeat. Ipsam aperiam dolore cumque molestiae sed quas,
+			illo consequuntur eum cupiditate tempore debitis maxime ducimus ea quo.
+		</aside>
+		<section class="header-categories">
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+			<span>Lorem, ipsum.</span>
+		</section>
+		<main class="main">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+			numquam dolorum est sint sed necessitatibus, illum perspiciatis adipisci
+			odio, quasi accusamus nostrum neque expedita saepe, sunt labore.
+			Doloremque minima rerum perferendis libero amet error tempora, autem
+			aliquid atque incidunt quis id, ex unde, blanditiis provident officiis
+			magnam delectus eveniet dignissimos. Est minima quae recusandae nostrum
+			facilis doloremque repellendus, natus harum id veniam voluptatibus
+			eligendi tempora iusto, eveniet, deserunt aliquam culpa. Earum et
+			perspiciatis similique, modi sapiente illum rem consequuntur fugiat ullam
+			beatae iste dignissimos rerum, atque id. Praesentium, voluptates at
+			necessitatibus deleniti impedit asperiores eos atque obcaecati ea dolor
+			corporis, enim ipsa exercitationem. Asperiores aperiam fugiat a ducimus
+			sapiente totam, modi voluptate recusandae tempore necessitatibus
+			aspernatur perspiciatis alias reprehenderit. Fuga eius omnis nobis
+			architecto suscipit incidunt nemo harum vitae consequuntur iure. Rerum,
+			nisi quis aspernatur natus, deserunt ratione accusamus, commodi sit
+			recusandae magnam illo! Ipsam dolorum est porro atque inventore minus
+			reprehenderit asperiores saepe fugit et nisi perspiciatis modi officiis
+			fuga, accusantium sapiente optio commodi! Officiis voluptatibus suscipit
+			sunt veritatis dicta aliquam atque assumenda! Cumque distinctio facere
+			accusamus ducimus nesciunt? Atque voluptatum, nesciunt inventore cum
+			accusamus voluptas eum deleniti delectus tempore architecto porro
+			voluptate et aperiam eligendi quisquam, quibusdam explicabo fugiat sunt
+			odit assumenda nobis! Obcaecati laboriosam, harum doloremque eos sapiente
+			eligendi possimus ex quasi excepturi consectetur. Consequuntur fuga
+			aperiam consectetur, alias sed repellat facilis, obcaecati, quisquam
+			similique laboriosam accusamus. Veniam beatae rerum esse, necessitatibus
+			sed exercitationem ut eveniet amet consequatur sequi nemo eligendi
+			obcaecati, accusamus temporibus, adipisci iusto nihil quia aut autem
+			explicabo laboriosam numquam. Doloremque harum, saepe totam, dignissimos
+			earum accusamus nulla delectus dolor iure voluptates eos. Similique
+			voluptatem esse blanditiis quod asperiores, debitis corporis praesentium
+			sint. Magni asperiores neque ipsa commodi, maxime ea soluta modi
+			consectetur veritatis, a sint quaerat. Laudantium vel quod quam doloribus,
+			modi eaque voluptate tempore at debitis nemo neque magni possimus sunt eum
+			eius ut expedita rem fuga id. Obcaecati officia sapiente voluptates
+			cupiditate quas, atque cumque iure quasi totam, facere ullam natus iusto
+			et amet, provident ea ipsum nulla sunt fuga voluptate tenetur consectetur
+			voluptatum? Enim eaque temporibus aperiam consequuntur deserunt ab
+			architecto iste laboriosam cumque dignissimos dicta, similique praesentium
+			neque sequi recusandae ipsum iure amet modi facere iusto quasi veritatis
+			vitae optio. Sunt nisi facilis eum iure, ut eaque. Ullam exercitationem
+			odio voluptatem illum eum ea, possimus placeat illo a mollitia ratione
+			architecto voluptatibus consequatur sit dolores? Consectetur neque
+			consequatur id a eligendi libero! Corrupti impedit adipisci praesentium
+			eveniet soluta eum modi numquam veniam atque tenetur officia perspiciatis
+			in, repellendus omnis, culpa ab quidem vero consequatur ipsa vel
+			architecto optio ea. Obcaecati alias ducimus voluptatum sunt, nam
+			aspernatur, ab autem quisquam velit perferendis possimus. Quidem tempora
+			eaque dolorem, vero debitis possimus suscipit autem neque, similique,
+			aperiam iure non illum minus provident? Laudantium dolor nostrum repellat
+			asperiores, fugiat, voluptatum, ut iusto saepe debitis expedita blanditiis
+			quod ipsam beatae corrupti atque totam harum facilis neque dolores fugit
+			iure incidunt. Unde recusandae dicta esse, optio, impedit totam, repellat
+			pariatur molestiae harum vitae aut eius hic voluptates. Maiores quod
+			laborum, optio repudiandae, nostrum repellendus in quia possimus rem nisi
+			commodi inventore veritatis aut! Molestias dignissimos modi aliquam
+			consequuntur minus excepturi, pariatur corrupti id magnam tempora nulla,
+			porro quis officiis eum incidunt odit ex! Repellat reiciendis rem
+			veritatis delectus harum vel autem, itaque facilis corrupti similique.
+			Illo labore, ipsa aperiam quidem rem facilis dolorem quis quo hic modi
+			aliquam nemo eos debitis id corporis eum, incidunt ipsum. Quidem vitae
+			expedita facere aspernatur dolorem velit accusamus itaque deleniti, quas
+			magnam aliquam, quos at! Dignissimos quaerat debitis, commodi corrupti
+			repellat doloremque optio veritatis officia quasi provident a vitae
+			molestias, nemo ea quis accusamus libero voluptatibus necessitatibus dolor
+			maiores perspiciatis. Excepturi iste tempore hic magnam laborum officiis!
+			Totam soluta voluptatem magni illum dolores, corrupti, sint beatae
+			consectetur debitis itaque quos, saepe sed tempora mollitia minus officia
+			rerum quia! Obcaecati, natus itaque debitis magni dolore repellendus
+			aliquam expedita vel, ipsa totam similique saepe. Quos dolorem rem
+			similique, exercitationem omnis reprehenderit? Nihil ullam dolore quasi?
+			Quis iste hic, sed id ex magnam adipisci officia illo minus minima
+			repudiandae quia aliquid impedit nemo, autem quaerat distinctio fugiat
+			culpa incidunt! Vel nemo vitae maxime provident cum iure. Iure temporibus
+			id dicta et autem quisquam reiciendis aspernatur rerum similique tempore
+			illum obcaecati dignissimos natus quae delectus sit suscipit laborum
+			perferendis nihil, ipsam ea eos? Assumenda labore voluptates modi
+			accusamus obcaecati eligendi alias voluptatibus nostrum consequatur soluta
+			ab quis, suscipit officia quod saepe vitae quae ex eos doloribus. Earum
+			voluptas id delectus iure quasi quod labore! Non perferendis laudantium
+			consectetur necessitatibus, dolore explicabo ad, modi iure, magnam
+			temporibus optio delectus quo sequi enim facere eius fuga quisquam!
+			Tempore, consequuntur nisi! Consectetur, rem distinctio error culpa, neque
+			a accusantium esse ex iste beatae, porro odit perspiciatis adipisci alias?
+			Ipsum libero error reiciendis pariatur eveniet nobis laborum optio
+			cupiditate soluta eligendi sunt aspernatur laboriosam numquam nihil
+			similique, eaque vero accusamus voluptatum. Distinctio sapiente animi
+			architecto magni in veniam aliquid illo omnis alias tenetur temporibus
+			aliquam vitae ex ratione rerum iusto, repellat voluptates, quisquam
+			incidunt laudantium molestiae aperiam inventore? Ipsam, odio harum. Saepe
+			voluptatum, beatae tempore sint non porro perspiciatis distinctio
+			praesentium quasi ratione laudantium voluptates alias impedit vitae
+			laborum cupiditate nobis quisquam suscipit? Quae, distinctio animi atque
+			aspernatur, reiciendis quos doloremque hic fugit, laboriosam temporibus
+			molestiae error culpa at repellat est obcaecati veritatis maxime adipisci
+			labore porro quibusdam! Rem, dignissimos accusamus voluptas quaerat
+			reiciendis voluptatem corporis, earum nam quasi nobis maiores ea veniam
+			perspiciatis consequatur temporibus esse doloribus repudiandae deserunt
+			laudantium illum rerum architecto! Vel eius modi eum nulla nobis enim
+			ducimus saepe incidunt id quia perspiciatis molestias voluptate magni,
+			quae nesciunt perferendis quibusdam iusto necessitatibus repellendus
+			corrupti. Illo, nobis! Corporis sunt non iste aperiam eveniet nam modi
+			aliquam. Repellendus itaque modi, eum sit dolor iste optio architecto,
+			quisquam provident tempora porro ipsum enim ipsam unde nihil maiores
+			deleniti eveniet doloremque minima molestias! Nulla, nostrum. Nihil odio
+			quam ullam repellendus dignissimos nesciunt ipsam nemo iste perspiciatis
+			velit excepturi obcaecati tenetur fuga amet, facere quis suscipit vel
+			inventore.
+		</main>
 	</body>
 </html>
