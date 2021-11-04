@@ -1,6 +1,11 @@
 /* body * {
 	border: 1px solid black;
 } */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
 	height: 100vh;
 	width: 100vw;
@@ -46,19 +51,7 @@ body {
 	grid-area: side-menu;
 	overflow: auto;
 }
-.header-categories {
-	padding: 0.5rem 1rem;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-	border-top: 1px solid rgba(0, 0, 0, 0.2);
-	gap: 0.5rem;
-	display: grid;
-	align-items: center;
-	grid-auto-flow: column;
-	position: sticky;
-	top: 52px;
-	grid-area: header-categories;
-	overflow: scroll;
-}
+
 .main {
 	grid-area: main;
 	overflow: auto;
@@ -115,4 +108,34 @@ body {
 
 .menu-button-image img:active {
 	border: 2px solid blue;
+}
+
+.header-categories {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 0.5rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	position: sticky;
+	top: 52px;
+	grid-area: header-categories;
+	overflow: scroll;
+}
+
+.category-list {
+	list-style-type: none;
+	gap: 0.5rem;
+	display: grid;
+	align-items: center;
+	grid-auto-flow: column;
+}
+.category-button {
+	display: inline-block;
+	white-space: nowrap;
+	padding: 0.25rem 1rem;
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.category-button.active {
+	background-color: black;
+	color: white;
 }
