@@ -39,8 +39,6 @@ body {
 	grid-area: header-right;
 	padding-right: 1rem;
 	gap: 0.25rem;
-	position: sticky;
-	top: 0;
 	display: grid;
 	grid-auto-flow: column;
 	align-items: center;
@@ -108,8 +106,6 @@ body {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	padding: 0.5rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.2);
-	position: sticky;
-	top: 52px;
 	grid-area: header-categories;
 	overflow: scroll;
 }
