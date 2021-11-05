@@ -22,21 +22,17 @@ body {
 .header-left {
 	grid-area: header-left;
 	padding: 0.25rem;
+	padding-left: 1rem;
 	display: grid;
-	grid-auto-flow: column;
-	justify-content: center;
-	gap: 0.5rem;
+	grid-template-columns: auto 1fr;
+	gap: 1rem;
 	align-items: center;
-	position: fixed;
-	top: 0;
 }
 .header-search {
 	grid-area: header-search;
 	padding: 0.25rem 2rem;
 	display: grid;
 	align-items: center;
-	position: sticky;
-	top: 0;
 }
 .header-right {
 	grid-area: header-right;
@@ -198,4 +194,36 @@ body {
 	font-size: 0.5rem;
 	font-weight: normal;
 	color: rgba(0, 0, 0, 0.4);
+}
+
+.main a,
+.footer a {
+	color: unset;
+	text-decoration: unset;
+}
+
+.footer {
+	width: 235px;
+}
+
+.footer-list {
+	list-style-type: none;
+	padding: 0.75rem;
+	padding-bottom: 0.5rem;
+	line-height: 0.5rem;
+}
+
+.footer-list-item {
+	padding: 0 0.25rem;
+	display: inline-block;
+	color: rgb(96, 96, 96);
+	font-size: 0.6rem;
+}
+
+.copyrights {
+	padding-left: 1rem;
+	padding-bottom: 0.25rem;
+	font-weight: 200;
+	color: rgb(96, 96, 96);
+	font-size: 0.5rem;
 }
